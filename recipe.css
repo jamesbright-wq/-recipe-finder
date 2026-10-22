@@ -1,0 +1,286 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Heebo", sans-serif;
+    color: #173A35;
+}
+
+.container{
+    background-color: #F6F5F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ############ Header style ########### */
+
+header{
+    display: flex;
+    width: 90%;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 3px #ECEDE8;
+    color: #173A35;
+   
+}
+
+.header-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 10%;
+}
+
+.header-logo a{
+    display: flex;
+    text-decoration:none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    text-decoration: none;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 20px;
+
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #173A35;
+}
+
+.hamburger-menu{
+    display: none !important;
+}
+.home{
+    text-decoration: underline 3px #FA9F6F;
+}
+
+
+
+.btn{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #173A35;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.recipe-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recipe-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.recipe-text h1{
+    font-size: 50px;
+}
+
+.recipe-text p{
+    width: 40%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.recipe-selects{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.recipe-select select{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #ECEDE8;
+    background-color: #ffff;
+}
+
+.recipe-search input{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #ECEDE8;
+
+}
+
+.recipes-card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: solid 1px #ECEDE8;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.card-img img{
+    width: 95%;
+}
+
+.card-text{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.card-icon{
+    width: 90%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.card-icon2 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-btn{
+    width: 95%;
+    padding-bottom: 15px;
+}
+
+.card-btn button{
+    width: 100%;
+    background-color: #173A35;
+    color: #ffff;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 0;
+    font-size: 16px;
+
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 80%;
+    text-align: center;
+
+}
+
+@media(max-width: 1023px){
+    nav, .header-btn{
+        display: none !important;
+    }
+    .hamburger-menu{
+    display: flex !important;
+    }
+
+    .recipes-card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+   .recipes-card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+
+}
+
+.recipe-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.recipe-text h1{
+    font-size: 40px;
+}
+
+.recipe-text p{
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.recipe-selects{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+}
